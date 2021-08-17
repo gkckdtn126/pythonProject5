@@ -13,6 +13,7 @@ def hello():
 #인사가 끝났습니다.
 #3. hello 함수에 + 다른 꾸며주는거 추가하자.(인사가 시작됐습니다.)
 #print("인사가끝났습니다")'''
+import math
 
 '''def test(function): #데코레이터 생성을 위해 만들었음
     def wrapper():
@@ -134,7 +135,7 @@ students = [Student(10),Student(20)]
 print()
 print("현재 생성된 총 학생수는{}명".format(Student.count))'''
 
-#garbage 컬렉터
+'''#garbage 컬렉터
 class Test:
     def __init__(self):
         self.name = name #메모리에 저장
@@ -144,4 +145,12 @@ Test("a") #self.name, 메모리에 저장된다. 메모리에 a가 적재된다.
 Test("b")
 
 b = Test("b") #소거 되기 전에 b공간에 저장된다.
-#메모리에 스왑파일 만든다.
+#메모리에 스왑파일 만든다.'''
+import math
+class Circle:
+    def __init__(self,radius):
+        self.__radius = radius
+    def get_circumference(self):
+        return 2*math.pi*self.__radius #언더바 두개 쓰면 프라이빗 됨 외부에서 이 값에 접근 못함
+
+Circle.get_circumference(10)
