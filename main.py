@@ -1,5 +1,4 @@
 from urllib import request
-
 from bs4 import BeautifulSoup
 
 target = request.urlopen("http://www.kma.go.kr/weather/forecast/mid-term-rss3.jsp?stnId=108")
